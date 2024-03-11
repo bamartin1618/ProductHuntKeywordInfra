@@ -36,10 +36,10 @@ RUN pip install --no-cache-dir --upgrade pip && \
     pip install --no-cache-dir pyspark apache-airflow beautifulsoup4 pandas requests
 
 # Copy your scripts and DAGs to the container
-COPY scripts/pyspark_keywords.py /scripts/pyspark_keywords.py
-COPY scripts/product_hunt_scraper.py /scripts/product_hunt_scraper.py
-COPY dags/airflow-dag.py /airflow/dags/airflow-dag.py
-COPY scripts/stopwords.txt /scripts/stopwords.txt
+COPY ./scripts/pyspark_keywords.py /scripts/pyspark_keywords.py
+COPY ./scripts/product_hunt_scraper.py /scripts/product_hunt_scraper.py
+COPY ./dags/airflow-dag.py /airflow/dags/airflow-dag.py
+COPY ./scripts/stopwords.txt /scripts/stopwords.txt
 
 # Set the working directory
 WORKDIR /scripts
