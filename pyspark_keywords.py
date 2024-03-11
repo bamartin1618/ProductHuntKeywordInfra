@@ -4,7 +4,7 @@ from pyspark.ml import Pipeline
 from pyspark.sql.functions import udf, explode, col, sum
 from pyspark.sql.types import ArrayType, StringType, StructType, StructField, DoubleType
 import os
-from ProductHuntScraper import ProductHuntScraper  # Import the scraper class
+from product_hunt_scraper import ProductHuntScraper  # Import the scraper class
 from datetime import datetime
 
 # Initialize Spark session
