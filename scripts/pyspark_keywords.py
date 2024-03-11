@@ -17,7 +17,7 @@ spark = SparkSession.builder \
     .getOrCreate()
 
 # Load the custom stopwords from a file
-stopwords_path = 'stopwords.txt'  # Update this path
+stopwords_path = './scripts/stopwords.txt'  # Update this path
 with open(stopwords_path, 'r') as file:
     custom_stopwords = [line.strip() for line in file.readlines()]
 

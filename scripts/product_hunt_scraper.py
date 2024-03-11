@@ -14,7 +14,7 @@ class ProductHuntScraper:
         date = datetime.now()
 
         year = date.year
-        week_num = date.isocalendar().week
+        week_num = date.isocalendar().week-1
 
         response = requests.get(f"https://www.producthunt.com/leaderboard/weekly/{year}/{week_num}")
 
